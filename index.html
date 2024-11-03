@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily devotion</title>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <link rel="stylesheet" href="styles/header.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <h1 class="nowrap">Daily Devotion</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="#">Home</a></li>
+          <li class="nowrap">
+            <a href="open-heaven.html">Open Heavens </a>
+          </li>
+          <li class="nowrap">
+            <a href="sunday-school.html">Sunday School </a>
+          </li>
+          <li class="nowrap">
+            <a href="house-fellowship.html">House Fellowship </a>
+          </li>
+        </ul>
+      </nav>
+
+      <input class="toggle-checkbox toggle" id="toggle" type="checkbox" />
+      <label class="hamburger" for="toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </label>
+    </header>
+
+    <main>
+      <div class="card-grid"></div>
+    </main>
+
+    <script src="scripts/header.js"></script>
+    <script type="module" src="scripts/index.js"></script>
+  </body>
+</html>

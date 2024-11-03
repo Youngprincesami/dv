@@ -1,0 +1,82 @@
+:root {
+  --main-max-width: 1000px;
+}
+
+.center-text {
+  text-align: center;
+}
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+.margin-bottom-0 {
+  margin-bottom: 0;
+}
+/* utility ends */
+
+/*///////////////////////// */
+.navigator {
+  max-width: var(--main-max-width);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--default-padding);
+  margin: 0.5rem 0;
+}
+.navigator button {
+  padding: var(--default-padding) 1.5rem;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 1rem;
+  color: white;
+}
+
+.navigator button:hover {
+  box-shadow: 0 2px 5px rgba(34, 34, 34, 0.442);
+}
+
+.navigator,
+main {
+  border: 1px solid rgba(204, 204, 204, 0.588);
+  background-color: white;
+  padding: 1rem;
+}
+
+main {
+  max-width: var(--main-max-width);
+}
+
+.bible-text-ul {
+  --margin-left: 30px;
+  margin-left: var(--margin-left);
+}
+.bible-text-ul li,
+.hymn-ul li {
+  list-style-type: decimal;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.open-heaven-first-parag::first-letter {
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1;
+  float: left;
+  /* height: 10px; */
+}
+.hymn-ul {
+  margin-left: 30px;
+  /* background-color: red; */
+}
+.message-special-paragraph {
+  margin-left: 30px;
+  color: rgba(44, 41, 41, 0.717);
+  font-weight: bold;
+}
+.hymn__chorus {
+  margin-left: 30px;
+  margin-top: 1rem;
+}
+.hymn__chorus p {
+  margin-bottom: 0;
+  /* color: blue; */
+  line-height: unset;
+}

@@ -1,0 +1,12 @@
+ol {
+  margin-left: var(--margin-left);
+}
+
+h1 {
+  text-align: center;
+}
+main {
+  border: 1px solid rgba(204, 204, 204, 0.588);
+  background-color: white;
+  padding: 1rem;
+}

@@ -1,0 +1,123 @@
+.header {
+  font-size: clamp(0.75rem, 2vh, 1.2rem);
+  display: flex;
+  padding: 1rem;
+  background-color: var(--header-bg-color);
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 10;
+  box-shadow: var(--header-shadow-setting);
+}
+
+header h1 {
+  font-size: inherit;
+  color: rgb(0, 219, 219);
+}
+header nav ul {
+  display: flex;
+  /* background-color: red; */
+  align-items: center;
+  justify-content: flex-end;
+}
+header nav {
+  flex: 1;
+}
+header nav ul li a {
+  color: var(--header-link-color);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+header nav ul li a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: rgb(0, 219, 219);
+}
+
+ul li {
+  list-style-type: none;
+  margin-right: 1rem;
+}
+
+/* From Uiverse.io by elijahgummer */
+.toggle-checkbox {
+  display: none;
+}
+
+.hamburger {
+  flex-direction: column;
+  justify-content: space-around;
+  width: 35px;
+  height: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger .bar {
+  width: 100%;
+  height: 4px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: relative;
+}
+
+.toggle-checkbox:checked + .hamburger .bar:nth-child(2) {
+  transform: translate(0px, 10px);
+  opacity: 0;
+  transition-delay: 0.3s;
+}
+
+.toggle-checkbox:checked + .hamburger .bar:nth-child(3) {
+  transform: translate(0px, -10px);
+  transition-delay: 0s;
+}
+
+.toggle-checkbox:checked + .hamburger .bar:nth-child(1) {
+  transform: rotate(-45deg) scale(0.7);
+  transition-delay: 0.6s;
+}
+.toggle-checkbox:checked + .hamburger .bar:nth-child(3) {
+  transform: rotate(45deg) scale(0.7);
+  transition-delay: 0.6s;
+}
+
+@media (max-width: 700px) {
+  .hamburger {
+    display: flex;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  header nav ul {
+    position: absolute;
+    display: block;
+    text-align: right;
+    right: 0;
+    top: 70px;
+    display: none;
+  }
+  header ul li {
+    margin-bottom: 1rem;
+  }
+}
+
+header.active {
+  padding-bottom: 300px;
+}
+.nav.active {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 80%;
+}

@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --fs: clamp(1rem, 1.4rem, 1.3rem);
+  --header-font-size: clamp(0.75rem, 2vh, 1.2rem);
+
+  /* color */
+  --font-p-color: rgba(67, 59, 59, 0.891);
+  --secondary-color: rgba(18, 201, 70, 0.756);
+  --primary-color: rgb(4, 150, 138);
+  --header-bg-color: rgb(68, 68, 68);
+  --header-link-color: rgb(192, 192, 192);
+
+  /* width */
+  --card-width: clamp(300px, 50vw, 400px);
+  --card-figure-height: min(200px, 400px);
+
+  /* height */
+
+  /* padding */
+  --default-padding: 0.5rem;
+
+  /* margin */
+  --margin-left: 30px;
+  /* border */
+  --card-border-color: rgba(128, 128, 128, 0.685);
+
+  /* transition */
+  --transition-duration: 0.4s;
+
+  /* shadow */
+  --header-shadow-setting: 0 10px 20px rgba(150, 148, 148, 0.907);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(241, 244, 245);
+  color: var(--font-p-color);
+  padding: 0 0.4rem 100px 0.4rem;
+  margin-top: 100px;
+  max-width: 1600px;
+  margin: 100px auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--fs);
+}
+
+h3,
+h2 {
+  margin-bottom: 2rem;
+}
+h3 {
+  text-align: center;
+}
+/* open heaven message */
+h4 {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+p {
+  color: var(--font-p-color);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+button {
+  font: inherit;
+  transition: var(--transition-duration);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top;
+}
+button {
+  transition: 0.25s;
+}
+
+/* utility */
+.word-center {
+  text-align: center;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+.title {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.upper-case {
+  text-transform: uppercase;
+}
+.bold {
+  font-weight: bold;
+}

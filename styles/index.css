@@ -1,0 +1,85 @@
+.card-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: red; */
+  width: 100%;
+}
+.wrapper-card {
+  background-color: white;
+  padding: 1rem;
+  width: var(--card-width);
+  /* border: 2px solid var(--card-border-color); */
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(201, 196, 196, 0.568);
+  align-self: flex-start;
+  justify-self: center;
+  transition: var(--transition-duration);
+}
+.wrapper-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 40px rgba(201, 196, 196, 0.568);
+}
+
+.card-fig {
+  height: var(--card-figure-height);
+  width: 100%;
+}
+.card img {
+  transition: 0.4s;
+}
+.card img:hover {
+  opacity: 0.8;
+}
+.card h3 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.bible-verse {
+  font-style: italic;
+  opacity: 0.8;
+}
+.date {
+  opacity: 0.8;
+}
+
+.card p {
+  margin-bottom: 0.5rem;
+  line-height: 1.4rem;
+}
+.card button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--primary-color);
+  font: inherit;
+  color: white;
+  margin-top: 1rem;
+}
+.card button:hover {
+  opacity: 0.8;
+}
+@media (max-width: 1000px) {
+  .wrapper-card {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    /* background-color: red; */
+  }
+  .wrapper-card {
+    width: 85%;
+  }
+}
+@media (max-width: 400px) {
+  .wrapper-card {
+    width: 95%;
+  }
+}
